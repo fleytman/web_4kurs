@@ -4,4 +4,5 @@ web_4kurs
 
 Для запуска программы требуется наличие:
 python 2.7 - https://www.python.org/downloads/
+
 Grab - http://docs.grablib.org/index.html#document-grab/installation
