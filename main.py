@@ -9,6 +9,10 @@ from grab import Grab
 
 g = Grab()
 g.go('http://gepir.gs1.org/v32/xx/gtin.aspx')
+
+g.response.save("out.aspx")
+
+
 #Устанавливаем в форму поиска значение
 g.set_input('TabContainerGTIN:TabPanelGTIN:txtRequestGTIN', '4607005930248')
 #Выбираем checkbox
@@ -18,6 +22,6 @@ g.set_input('TabContainerGTIN:TabPanelGTIN:rblGTIN', 'item')
 #Отправляем запрос
 g.submit()
 
-g.response.save("out1.aspx")
+##g.response.save("out1.aspx")
 
 print g.search(u'4607005930248')

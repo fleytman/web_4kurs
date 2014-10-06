@@ -9,7 +9,7 @@ g.response.save("out.html")
 print g.tree
 print g.tree.xpath("//img")[0]
 
-#print g.xpath_text('//img[@id="recaptcha_challenge_image"')
+print g.xpath_text('//img[@id="recaptcha_image"]')
 print g.search(u"recaptcha_image")
 ##Устанавливаем в форму поиска значение
 #g.set_input('TabContainerGTIN:TabPanelGTIN:txtRequestGTIN', '4607005930248')
