@@ -14,7 +14,7 @@ def index():
 def search():
     form = SearchForm()
     if form.validate_on_submit():
-        flash("–усский текст".decode("cp1251") + form.search.data)
+        flash("¬веденный штрихкод: ".decode("cp1251") + unicode(form.search.data))
         return redirect('/index')
     return render_template("search.html",
          title="search",

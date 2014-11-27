@@ -3,16 +3,17 @@
 
 {% block content %}
 
-<h1>Search</h1>
+<h1>Поиск продуктов по штрихкодам</h1>
 <form action="" method="post" name="search">
     {{form.hidden_tag()}}
     <p>
-        Введите свой EIN:<br>
-        {{form.search(size=80)}}<br>
+        Введите свой штрихкод длинной от 11 до 13 символов:<br>
+        <!-- Создаёт текстовое поле для поиска длинной от 11 до 13 символов -->
+        {{form.search(size = 15, pattern=".{11,13}")}}
         {% for error in form.errors.search %}
         <span style="color: red;">[{{error}}]</span>
-        {% endfor %}<br>
+        {% endfor %}
     </p>
-    <p><input type="submit" value="Go"></p>
+    <p><input type="submit" value="Найти"></p>
 </form>
 {% endblock %}
