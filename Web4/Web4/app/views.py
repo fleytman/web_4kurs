@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+п»ї# -*- coding: utf-8 -*-
 
 from flask import render_template, flash, redirect
 from app import app
@@ -14,7 +14,7 @@ def index():
 def search():
     form = SearchForm()
     if form.validate_on_submit():
-        flash("Введенный штрихкод: ".decode("cp1251") + unicode(form.search.data))
+        flash("Р’РІРµРґС‘РЅРЅС‹Р№ С€С‚СЂРёС… РєРѕРґ: ".decode("utf8") + unicode(form.search.data))
         return redirect('/index')
     return render_template("search.html",
          title="search",

@@ -9,7 +9,7 @@
     <p>
         Введите свой штрихкод длинной от 11 до 13 символов:<br>
         <!-- Создаёт текстовое поле для поиска длинной от 11 до 13 символов -->
-        {{form.search(size = 15, pattern=".{11,13}")}}
+        {{form.search(size = 15, pattern=".{11,13}", maxlength=13)}}
         {% for error in form.errors.search %}
         <span style="color: red;">[{{error}}]</span>
         {% endfor %}
