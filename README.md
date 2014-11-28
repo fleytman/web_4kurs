@@ -17,14 +17,22 @@ python virtualenv.py flask
 pip install -r requirements.txt
 
 Если используется virtualenv, то для Linux:
+
+
 flask/bin/pip install -r requirements.txt
+
 для Windows:
+
 flask\Scripts\pip install -r requirements.txt
 
 Для запуска локального сервера следует выполнить:
-Для Linux:
+
+Для Linux(не тестировал, возможно следует изменить формат завершения строк во всех исходных файлах):
+
 flask\bin\python runserver.py
+
 Для Windows:
+
 flask\Scripts\python.exe runserver.py
 
 Далее в браузере следует набрать http://localhost:5555/
