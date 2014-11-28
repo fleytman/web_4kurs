@@ -9,7 +9,7 @@ def index():
     return render_template("index.html",
         title = 'Home')
 
-@app.route('/')
+@app.route('/', methods = ['GET', 'POST'])
 @app.route('/search', methods = ['GET', 'POST'])
 def search():
     form = SearchForm()
