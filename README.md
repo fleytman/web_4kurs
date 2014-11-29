@@ -1,9 +1,40 @@
 web_4kurs
 =========
-Программа main.py ищет GTIN используя сервис http://gepir.gs1.org/v32/xx/gtin.aspx
+Web4.sln - файл проекта для Visual Studio, необязателен.
 
-Для запуска программы требуется наличие:
+Для развёртывания вебприложения требуется :
 
 python 2.7 - https://www.python.org/downloads/
+pip - https://pip.pypa.io/en/latest/installing.html
+virtualenv(опционально) - https://pypi.python.org/pypi/virtualenv
 
-Grab - http://docs.grablib.org/index.html#document-grab/installation
+Вебприложение находится в директории Web4/
+
+Для вебприложения можно создать своё виртуальное окружение для питон:
+python virtualenv.py flask
+
+Чтобы установить нужные пакеты для запуска вебприложения следует выполнить команду:
+pip install -r requirements.txt
+
+Если используется virtualenv, то для Linux:
+
+
+flask/bin/pip install -r requirements.txt
+
+для Windows:
+
+flask\Scripts\pip install -r requirements.txt
+
+Для запуска локального сервера следует выполнить:
+
+Для Linux(не тестировал, возможно следует изменить формат завершения строк во всех исходных файлах):
+
+flask\bin\python runserver.py
+
+Для Windows:
+
+flask\Scripts\python.exe runserver.py
+
+Далее в браузере следует набрать http://localhost:5555/
+
+В папке tmp содержатся файлы, которые скорее всего не понадобятся впоследсвии.
