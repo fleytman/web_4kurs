@@ -5,7 +5,7 @@ This script runs the FlaskWebProject1 application using a development server.
 from os import environ
 from app import app
 
-#запускает вебприложение наа localhost:5555
+#запускает вебприложение на localhost:5555
 if __name__ == '__main__':
     HOST = environ.get('SERVER_HOST', 'localhost')
     try:

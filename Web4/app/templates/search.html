@@ -11,7 +11,8 @@
         <!-- Создаёт текстовое поле для поиска длинной от 11 до 13 символов -->
         {{form.search(size = 15, pattern=".{11,13}", maxlength=13)}}
         {% for error in form.errors.search %}
-        <span style="color: red;">[{{error}}]</span>
+        <!--<span style="color: red;">[{{error}}]</span>-->
+        <span style="color: red;">[В данном поле могут быть только цифры]</span>
         {% endfor %}
     </p>
     <p><input type="submit" value="Найти"></p>
