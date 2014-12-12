@@ -38,3 +38,5 @@ flask\Scripts\python.exe runserver.py
 Далее в браузере следует набрать http://localhost:5555/
 
 В папке tmp содержатся файлы, которые скорее всего не понадобятся впоследсвии.
+
+http://web4kurs-fleytman.rhcloud.com/ - приложение на хостинге(пока не запущено)
