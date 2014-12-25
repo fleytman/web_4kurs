@@ -5,11 +5,8 @@ class Additive(db.Model):
     additive_name = db.Column(db.String, index = True)
     description = db.Column(db.String, index = True)
     
-#    def __repr__(self):
-#        return '<Additive %r>' % (self.additive_name)
     def __repr__(self):
         return unicode(self.additive_name)
-
 
 class Foodstuff(db.Model):
     gtin = db.Column(db.Integer, primary_key = True)
@@ -20,4 +17,3 @@ class Foodstuff(db.Model):
 
     def __repr__(self):
         return '<Foodstuff %r>' % (self.foodstuff_name)
-#SELECT foodstuff.foodstuff_name FROM foodstuff WHERE foodstuff.gtin = 4690228003998
