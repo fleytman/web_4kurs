@@ -16,8 +16,10 @@
     <PythonWsgiHandler>app.wsgi_app</PythonWsgiHandler>
     <Name>Web4</Name>
     <RootNamespace>Web4</RootNamespace>
-    <InterpreterId>{f132c882-3343-4b2d-aa18-9439559f6126}</InterpreterId>
-    <InterpreterVersion>2.7</InterpreterVersion>
+    <InterpreterId>
+    </InterpreterId>
+    <InterpreterVersion>
+    </InterpreterVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -27,19 +29,6 @@
     <DebugSymbols>true</DebugSymbols>
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
-  <ItemGroup>
-    <Interpreter Include="env\">
-      <Id>{f132c882-3343-4b2d-aa18-9439559f6126}</Id>
-      <BaseInterpreter>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</BaseInterpreter>
-      <Version>2.7</Version>
-      <Description>env (Python 2.7)</Description>
-      <InterpreterPath>Scripts\python.exe</InterpreterPath>
-      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
-      <LibraryPath>Lib\</LibraryPath>
-      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
-      <Architecture>X86</Architecture>
-    </Interpreter>
-  </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.db" />
     <Content Include="app\templates\base.html" />
@@ -57,7 +46,9 @@
     <Compile Include="app\__init__.py" />
     <Compile Include="config.py" />
     <Compile Include="db_create.py" />
+    <Compile Include="db_downgrade.py" />
     <Compile Include="db_migrate.py" />
+    <Compile Include="db_upgrade.py" />
     <Compile Include="runserver.py" />
   </ItemGroup>
   <ItemGroup>
