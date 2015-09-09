@@ -16,7 +16,7 @@
     <PythonWsgiHandler>app.wsgi_app</PythonWsgiHandler>
     <Name>Web4</Name>
     <RootNamespace>Web4</RootNamespace>
-    <InterpreterId>{2c171a88-3d43-4253-9149-2759df64b639}</InterpreterId>
+    <InterpreterId>{1fa0854c-5dca-48ac-b1a7-692720022b2a}</InterpreterId>
     <InterpreterVersion>2.7</InterpreterVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -55,7 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="flask\">
-      <Id>{2c171a88-3d43-4253-9149-2759df64b639}</Id>
+      <Id>{1fa0854c-5dca-48ac-b1a7-692720022b2a}</Id>
       <BaseInterpreter>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</BaseInterpreter>
       <Version>2.7</Version>
       <Description>flask (Python 2.7)</Description>
