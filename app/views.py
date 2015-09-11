@@ -20,8 +20,8 @@ def search():
         for measure, in db.session.query(models.Foodstuff.measure).filter_by(gtin = form.search.data):
             flash("Мера: ".decode("utf8")+unicode(measure))
         for ingredients, in db.session.query(models.Foodstuff.ingredients).filter_by(gtin = form.search.data):
-            flash("Состав: ".decode("utf8")+unicode(ingredients))
-
+             flash("Состав: ".decode("utf8")+unicode(ingredients))
+ 
         #Страница перенаправит приложение после нажатия на кнопку "Найти"
         return redirect('/search')
     return render_template("search.html",

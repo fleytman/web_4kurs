@@ -16,8 +16,10 @@
     <PythonWsgiHandler>app.wsgi_app</PythonWsgiHandler>
     <Name>Web4</Name>
     <RootNamespace>Web4</RootNamespace>
-    <InterpreterId>{1fa0854c-5dca-48ac-b1a7-692720022b2a}</InterpreterId>
-    <InterpreterVersion>2.7</InterpreterVersion>
+    <InterpreterId>
+    </InterpreterId>
+    <InterpreterVersion>
+    </InterpreterVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -52,19 +54,6 @@
   <ItemGroup>
     <Folder Include="app\" />
     <Folder Include="app\templates\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Interpreter Include="flask\">
-      <Id>{1fa0854c-5dca-48ac-b1a7-692720022b2a}</Id>
-      <BaseInterpreter>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</BaseInterpreter>
-      <Version>2.7</Version>
-      <Description>flask (Python 2.7)</Description>
-      <InterpreterPath>Scripts\python.exe</InterpreterPath>
-      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
-      <LibraryPath>Lib\</LibraryPath>
-      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
-      <Architecture>X86</Architecture>
-    </Interpreter>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
